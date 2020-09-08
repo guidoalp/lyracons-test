@@ -1,0 +1,28 @@
+.product {
+  min-height: 280px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1), 0 -1px 2px 0 rgba(0,0,0,.1);
+  transition: box-shadow .2s ease-in-out;
+  border-right: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.product:hover {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.16), 0 -1px 2px 0 rgba(0,0,0,.1);
+  border: none;
+}
+
+.product .name {
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.product .price {
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+  font-weight: 500;
+}
+
+.product .description {
+  font-size: .9rem;
+}
