@@ -28,11 +28,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://ec2-3-88-32-16.compute-1.amazonaws.com/challenge/products/")
+    fetch("http://ec2-3-88-32-16.compute-1.amazonaws.com/challenge/products/")
     .then((response) => response.json())
     .then((products) => this.setState({ 'items' : Object.entries(products), 'categories': Object.keys(products) }));
 
-    fetch("https://ec2-3-88-32-16.compute-1.amazonaws.com/challenge/additional/")
+    fetch("http://ec2-3-88-32-16.compute-1.amazonaws.com/challenge/additional/")
     .then((response) => response.json())
     .then((extraMenuItems) => this.setState({ extraMenuItems }));
   }
