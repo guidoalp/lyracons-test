@@ -10,7 +10,7 @@ const Cart = () => (
     <Row>
       <Col xs={12}>
         <div className="myCart-wrapper">
-          <ProductList items={ list() } cart />
+          { list().length ? <ProductList items={ list() } cart /> : <p class="text-secondary">Parece que su carrito aún está vacío!</p> }
         </div>
       </Col>
     </Row>
