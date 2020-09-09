@@ -23,9 +23,9 @@ function ProductList ({items, promo, cart}) {
         {items.map((categories) => (
           <div key={categories[0]} className="category">
             <Row className="justify-content-center">
-              {categories[1].map((product) => (
-                <Col key={product.sku} xs={12} sm={6} md={4} className="d-flex px-md-2">
-                  <Product Product={product} />
+              {categories[1].map((product, key) => (
+                <Col key={key} xs={12} sm={6} md={4} className="d-flex px-md-2">
+                  <Product key={product.sku} Product={product} />
                 </Col>
               ))}
             </Row>

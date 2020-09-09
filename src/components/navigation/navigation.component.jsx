@@ -21,9 +21,9 @@ function Navigation (props) {
           <Nav className="mr-auto">
             <Link to="/" className="nav-link text-center text-md-left pl-0">Inicio</Link>
             <NavDropdown title="Productos" className="text-center text-md-left" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/productos">Todo</NavDropdown.Item>
+                <NavDropdown.Item href="/productos" className="text-capitalize text-md-left">Todo</NavDropdown.Item>
                 {props.categories && props.categories.map((category) => 
-                  <NavDropdown.Item key={category} href={'/productos/' + category} className="text-capitalize">{category}</NavDropdown.Item>
+                  <NavDropdown.Item key={category} href={'/productos/' + category} className="text-capitalize text-md-left">{category}</NavDropdown.Item>
                 )}
             </NavDropdown>
             <Link to="/nosotros" className="nav-link text-center text-md-left">Nosotros</Link>
