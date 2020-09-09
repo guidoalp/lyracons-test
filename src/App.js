@@ -11,10 +11,12 @@ import {
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 
+import Products from './pages/products/products.component.jsx';
+import Cart from './pages/cart/cart.component.jsx';
+import Nosotros from './pages/nosotros/nosotros.component.jsx';
+
 import Navigation from './components/navigation/navigation.component.jsx';
-import ProductsPage from './components/productsPage/productsPage.component.jsx';
 import Breadcrumb from './components/breadcrumb/breadcrumb.component.jsx';
-import Cart from './components/cart/cart.component.jsx';
 
 class App extends Component {
   constructor () {
@@ -53,23 +55,15 @@ class App extends Component {
               <h1 className="section-title">Inicio</h1>
             </Route>
             <Route path="/productos/:category?">
-              <ProductsPage items={this.state.items} />
+              <Products items={this.state.items} />
             </Route>
             <Route path="/nosotros">
-              <h1 className="section-title">Nosotros</h1>
-              <div className="text-secondary mb-5">
-              <p class="">Lyracons is an Argentinian software development company focused on eCommerce solutions with Magento & VTEX. We have vast expertise in complex, large-scale, B2C and B2B projects with CRM, ERP, Payment Gateways and OMS integrations.</p>
-              <p class="">Lyracons provide full-service development, turn-key projects & off-shore elastics teams for Latin America & US market.</p>
-              <p class="">We are the first and only New Relic partner & reseller in Argentina.</p>
-              </div>
-              <h2 className="section-title">Nuestras Redes</h2>
-              { /* TODO: Agregar iconos de redes */ }
+              <Nosotros />
             </Route>
             <Route path="/promotions">
-              <ProductsPage items={this.state.items} promo />
+              <Products items={this.state.items} promo />
             </Route>
             <Route path="/cart">
-              <h1 className="section-title">Mi carrito</h1>
               <Cart />
             </Route>
           </Switch>
