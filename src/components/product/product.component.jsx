@@ -6,6 +6,13 @@ import { add, remove } from 'cart-localstorage';
 import './product.styles.scss';
 
 class Product extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reload: false
+    }
+  }
+
   agregarProducto = e => {
     const product = {
       id: e.target.closest('.card').getAttribute('data-sku'), 
@@ -21,6 +28,7 @@ class Product extends Component {
       id: e.target.closest('.card').getAttribute('data-sku'), 
     };
     remove(product.id, 1);
+    this.setState({'reload' : true} );
   }
 
   render() {

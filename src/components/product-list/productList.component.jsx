@@ -12,7 +12,7 @@ function ProductList ({items, promo, cart}) {
         <Row className="justify-content-center">
           {items.map((product) => (
             <Col key={product.sku} xs={12} sm={6} md={4} className="d-flex px-md-2">
-              <Product Product={product} cart/>
+              <Product Product={product} cart={cart} />
             </Col>
           ))}
         </Row>

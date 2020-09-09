@@ -7,10 +7,6 @@ import './cart.styles.scss';
 class Cart extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      "myCart" : []
-    }
   }
 
   componentDidMount() {
