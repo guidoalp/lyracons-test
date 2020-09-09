@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { list } from 'cart-localstorage';
 import ProductList from '../../components/product-list/productList.component.jsx';
 
+import './cart.styles.scss';
 
 class Cart extends Component {
   constructor(props) {

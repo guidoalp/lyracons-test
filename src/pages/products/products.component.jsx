@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import ProductList from '../../components/product-list/productList.component.jsx';
 
-import './products.styles.css';
+import './products.styles.scss';
 
 function Products ({items, promo}) {
   

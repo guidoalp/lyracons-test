@@ -4,7 +4,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import './breadcrumb.styles.css';
+import './breadcrumb.styles.scss';
 
 function CurrentPath () {
   let location = useLocation();

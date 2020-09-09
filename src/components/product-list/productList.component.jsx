@@ -1,8 +1,9 @@
 import React from 'react';
 import Product from '../product/product.component';
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
+import './productList.styles.scss';
 
 function ProductList ({items, promo, cart}) {
   if (promo || cart) {

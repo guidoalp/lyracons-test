@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { add, remove } from 'cart-localstorage';
 
-import './product.styles.css';
+import './product.styles.scss';
 
 class Product extends Component {
   agregarProducto = e => {
